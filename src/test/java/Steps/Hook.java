@@ -5,6 +5,7 @@ import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class Hook extends BaseUtli {
@@ -20,7 +21,9 @@ public class Hook extends BaseUtli {
     public void InitalizeTest(){
         //System.setProperty("webdriver.gecko.driver","/Users/chaunceylacey/Downloads/libs/geckodriver");
        System.setProperty("webdriver.chrome.driver","/Users/chaunceylacey/Downloads/libs/chromedriver_98");
-        baseUtli.webDriver= new ChromeDriver();
+        ChromeOptions chromeOptions = new ChromeOptions();
+        chromeOptions.addArguments("--headless");
+        baseUtli.webDriver= new ChromeDriver(chromeOptions);
         //baseUtli.webDriver= new FirefoxDriver();
     }
 

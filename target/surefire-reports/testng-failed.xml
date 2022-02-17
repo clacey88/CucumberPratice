@@ -3,13 +3,20 @@
 <suite thread-count="1" name="Failed suite [Surefire suite]" verbose="0">
   <test thread-count="1" name="Surefire test(failed)" verbose="0">
     <classes>
-      <class name="Features.runner.TestRunner">
+      <class name="TestRunner">
         <methods>
           <include name="setUpClass"/>
           <include name="runScenario" invocation-numbers="1"/>
           <include name="tearDownClass"/>
         </methods>
-      </class> <!-- Features.runner.TestRunner -->
+      </class> <!-- TestRunner -->
+      <class name="runner.TestRunner">
+        <methods>
+          <include name="setUpClass"/>
+          <include name="runScenario" invocation-numbers="1"/>
+          <include name="tearDownClass"/>
+        </methods>
+      </class> <!-- runner.TestRunner -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->

@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                    <span class="method-stats">4 methods, 2 failed,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -104,7 +104,12 @@
                     <div class="method-list-content failed suite-Surefire_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="Features.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login with correct username and password for invalid test&quot;, &quot;Optional[Login feature for Automation ...)">runScenario("Login with correct username and password for invalid test", "Optional[Login feature for Automation ...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login with correct username and password for invalid test&quot;, &quot;Optional[Login feature for Automation ...)">runScenario("Login with correct username and password for invalid test", "Optional[Login feature for Automation ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login with correct username and password for invalid test&quot;, &quot;Optional[Login feature for Automation ...)">runScenario("Login with correct username and password for invalid test", "Optional[Login feature for Automation ...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Surefire_suite -->
@@ -118,7 +123,12 @@
                     <div class="method-list-content passed suite-Surefire_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="Features.runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login with correct username and password&quot;, &quot;Optional[Login feature for Automation Practice Site]&quot;)">runScenario("Login with correct username and password", "Optional[Login feature for Automation Practice Site]")</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="runner.TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login with correct username and password&quot;, &quot;Optional[Login feature for Automation Practice Site]&quot;)">runScenario("Login with correct username and password", "Optional[Login feature for Automation Practice Site]")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="TestRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Login with correct username and password&quot;, &quot;Optional[Login feature for Automation Practice Site]&quot;)">runScenario("Login with correct username and password", "Optional[Login feature for Automation Practice Site]")</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Surefire_suite -->
@@ -136,7 +146,7 @@
           <div class="suite-Surefire_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">Features.runner.TestRunner</span>
+              <span class="class-name">TestRunner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -146,14 +156,14 @@
                   <span class="method-name">runScenario</span>
                   <span class="parameters">("Login with correct username and password for invalid test", "Optional[Login feature for Automation Practice Site]")</span>
                   <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;dfdlfldkfkljdf&quot;}
-  (Session info: chrome=98.0.4758.80)
+  (Session info: headless chrome=98.0.4758.102)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
 System info: host: &apos;Chaunceys-Air.attlocal.net&apos;, ip: &apos;2600:1700:1118:6e20:0:0:0:46%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;14.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [794b07fceebc2f1083b3640768c42606, findElement {using=css selector, value=dfdlfldkfkljdf}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.80, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: /var/folders/6r/wgwf6rl15nz...}, goog:chromeOptions: {debuggerAddress: localhost:58546}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:58546/devtoo..., se:cdpVersion: 98.0.4758.80, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: 794b07fceebc2f1083b3640768c42606
+Command: [7f5e29ab00cab7c4410f5fb3351e270e, findElement {using=css selector, value=dfdlfldkfkljdf}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: /var/folders/6r/wgwf6rl15nz...}, goog:chromeOptions: {debuggerAddress: localhost:50100}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:50100/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 7f5e29ab00cab7c4410f5fb3351e270e
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -165,8 +175,50 @@ Session ID: 794b07fceebc2f1083b3640768c42606
 	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
-	at Steps.AutoPracStep.userReachesProfileScreenWrongPage(AutoPracStep.java:60)
-	at ✽.user reaches profile screen wrong page(file:///Users/chaunceylacey/Downloads/CucumberPratice/src/test/java/Features/AutomationPractice.feature:16)
+	at Steps.AutoPracStep.userReachesProfileScreenWrongPage(AutoPracStep.java:61)
+	at ✽.user reaches profile screen wrong page(file:///Users/chaunceylacey/Git/CucumberPratice/src/test/java/Features/AutomationPractice.feature:16)
+... Removed 5 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-failed -->
+          <div class="suite-Surefire_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">runner.TestRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Login with correct username and password for invalid test&quot;, &quot;Optional[Login feature for Automation ...)">
+                  </a> <!-- runScenario("Login with correct username and password for invalid test", "Optional[Login feature for Automation ...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Login with correct username and password for invalid test", "Optional[Login feature for Automation Practice Site]")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;dfdlfldkfkljdf&quot;}
+  (Session info: headless chrome=98.0.4758.102)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.1.1&apos;, revision: &apos;e8fcc2cecf&apos;
+System info: host: &apos;Chaunceys-Air.attlocal.net&apos;, ip: &apos;2600:1700:1118:6e20:0:0:0:46%en0&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.12.6&apos;, java.version: &apos;14.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [4a89a4f52215d15b0ad49059e005b57a, findElement {using=css selector, value=dfdlfldkfkljdf}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: /var/folders/6r/wgwf6rl15nz...}, goog:chromeOptions: {debuggerAddress: localhost:50039}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:50039/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 4a89a4f52215d15b0ad49059e005b57a
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:367)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+	at Steps.AutoPracStep.userReachesProfileScreenWrongPage(AutoPracStep.java:61)
+	at ✽.user reaches profile screen wrong page(file:///Users/chaunceylacey/Git/CucumberPratice/src/test/java/Features/AutomationPractice.feature:16)
 ... Removed 5 stack frames
 </div> <!-- stack-trace -->
                   <em>
@@ -178,7 +230,25 @@ Session ID: 794b07fceebc2f1083b3640768c42606
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">Features.runner.TestRunner</span>
+              <span class="class-name">TestRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Login with correct username and password&quot;, &quot;Optional[Login feature for Automation Practice Site]&quot;)">
+                  </a> <!-- runScenario("Login with correct username and password", "Optional[Login feature for Automation Practice Site]") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Login with correct username and password", "Optional[Login feature for Automation Practice Site]")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Surefire_suite-class-passed -->
+          <div class="suite-Surefire_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">runner.TestRunner</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -204,7 +274,8 @@ Session ID: 794b07fceebc2f1083b3640768c42606
 &lt;suite thread-count=&quot;1&quot; name=&quot;Surefire suite&quot; verbose=&quot;0&quot;&gt;
   &lt;test thread-count=&quot;1&quot; name=&quot;Surefire test&quot; verbose=&quot;0&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Features.runner.TestRunner&quot;/&gt;
+      &lt;class name=&quot;runner.TestRunner&quot;/&gt;
+      &lt;class name=&quot;TestRunner&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Surefire test --&gt;
 &lt;/suite&gt; &lt;!-- Surefire suite --&gt;
@@ -218,7 +289,7 @@ Session ID: 794b07fceebc2f1083b3640768c42606
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Surefire test (1 class)</span>
+                <span class="test-name">Surefire test (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -252,20 +323,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'runScenario')
-data.setCell(0, 2, 'Features.runner.TestRunner')
-data.setCell(0, 3, 23239);
+data.setCell(0, 2, 'runner.TestRunner')
+data.setCell(0, 3, 38071);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'runScenario')
-data.setCell(1, 2, 'Features.runner.TestRunner')
-data.setCell(1, 3, 10289);
+data.setCell(1, 2, 'TestRunner')
+data.setCell(1, 3, 19494);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'runScenario')
+data.setCell(2, 2, 'runner.TestRunner')
+data.setCell(2, 3, 16921);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'runScenario')
+data.setCell(3, 2, 'TestRunner')
+data.setCell(3, 3, 16791);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 33 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -291,24 +370,45 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">Features.runner.TestRunner</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">runner.TestRunner</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpClass(org.testng.TestRunner@414f13fc)</span>
+                <span class="method-name">setUpClass(org.testng.TestRunner@13c8ac77)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">runScenario("Login with correct username and password", "Optional[Login feature for Automation Practice Site]")</span>
-                <span class="method-start">1055 ms</span>
+                <span class="method-start">923 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">runScenario("Login with correct username and password for invalid test", "Optional[Login feature for Automation ...)</span>
-                <span class="method-start">24305 ms</span>
+                <span class="method-start">38997 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDownClass</span>
-                <span class="method-start">34643 ms</span>
+                <span class="method-start">55943 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestRunner</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass(org.testng.TestRunner@13c8ac77)</span>
+                <span class="method-start">56239 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Login with correct username and password", "Optional[Login feature for Automation Practice Site]")</span>
+                <span class="method-start">56304 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Login with correct username and password for invalid test", "Optional[Login feature for Automation ...)</span>
+                <span class="method-start">75798 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">92590 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
