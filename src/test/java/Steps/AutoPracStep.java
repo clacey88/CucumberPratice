@@ -57,7 +57,7 @@ public class AutoPracStep extends BaseUtli {
 
     @Then("user reaches profile screen wrong page")
     public void userReachesProfileScreenWrongPage() {
-        System.out.println("in last call");
+        System.out.println("in last method");
         Assert.assertTrue(baseUtli.webDriver.findElement(By.cssSelector("dfdlfldkfkljdf")).isDisplayed());
 
     }
